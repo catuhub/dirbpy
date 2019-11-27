@@ -30,17 +30,23 @@ Fish completions
 
 Dirbpy with Docker
 ------------------
-Pull the Docker
+Build the Docker image
 
-``docker pull marcolivierbouch/dirbpy``
+``docker build . -t <name-image>``
 
-After you need to get inside the docker
+Build Example
 
-``docker run -it marcolivierbouch/dirbpy``
+``docker build . -t myusername/dirbpy``
 
-Command example
+Run the container as if you were running the normal dirb command using the docker run option "--rm" (container will be automatically removed after the command has completed its execution)
 
-``dirbpy -o https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt -u https://[....].com``
+``docker run --rm myusername/dirbpy [OPTIONS]``
+
+Command Example
+
+``docker run --rm myusername/dirbpy -o https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt -u https://[....].com"
+
+
 
 Recommendations
 ---------------
