@@ -44,7 +44,7 @@ Run the container as if you were running the normal dirb command using the docke
 
 Command Example
 
-``docker run --rm myusername/dirbpy -o https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt -u https://[....].com"
+``docker run --rm myusername/dirbpy -o https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt -u https://[....].com``
 
 
 
