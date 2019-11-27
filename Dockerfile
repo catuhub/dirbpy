@@ -9,4 +9,4 @@ RUN apk add --no-cache python3 && \
     rm -r /root/.cache
 
 RUN pip install dirbpy
-CMD ["/bin/sh"]
+ENTRYPOINT ["dirbpy"]
